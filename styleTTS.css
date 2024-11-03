@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: "Poppins", serif;
+    height: 100vh;
+    background: #a45ee5; 
+    color: #fff; 
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: white;
+    text-align: start;
+    font-size: 20px;
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+#crossword-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.table1 {
+    border-collapse: collapse;
+    margin: 0 20px;
+    border: 2px solid black;
+    background-color: #fff; 
+}
+
+.white, .white input {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid black;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: wheat; 
+}
+
+.white input {
+    border: none;
+    outline: none;
+}
+
+.white input::placeholder {
+    color: black; 
+    font-size: 10px; 
+    text-align: left; 
+    padding-left: 2px; 
+    padding-top: 2px;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+#check-answer {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+#check-answer:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+
+#result-message {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#clues {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+#clues-left, #clues-right {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 15px;
+}
+
+#clues ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#clues li {
+    text-align: left; 
+    margin-bottom: 10px; 
+}
+
+#clues-left ul, #clues-right ul {
+    padding-left: 20px;
+    list-style-position: inside;
+    margin: 0;
+    font-weight: normal;
+    color: #fff; 
+}
+
+#clues-left h3, #clues-right h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #fff; 
+}
+
+footer {
+    width: 100%;
+    background-color : #3B1E54; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: relative; 
+    bottom: 0; 
+}
+
+footer h1 {
+    margin: 0; 
+    font-size: 10px; 
+    color: #fff; 
+}
